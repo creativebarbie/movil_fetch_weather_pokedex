@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Barbie Phone</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================
+         DESTELLOS DEL FONDO
+    ====================================== -->
+
+    <div class="sparkles"></div>
+
+
+    <!-- =====================================
+         TELÉFONO
+    ====================================== -->
+
+    <main class="phone">
+
+
+        <!-- BOTONES LATERALES -->
+
+        <div class="side-button volume-up"></div>
+
+        <div class="side-button volume-down"></div>
+
+        <div class="side-button power-button"></div>
+
+
+        <!-- =================================
+             PANTALLA
+        ================================== -->
+
+        <div class="screen">
+
+
+            <!-- REFLEJO DEL CRISTAL -->
+
+            <div class="screen-shine"></div>
+
+
+            <!-- =================================
+                 DYNAMIC ISLAND
+            ================================== -->
+
+            <div class="dynamic-island">
+
+                <div class="camera"></div>
+
+                <div class="sensor"></div>
+
+            </div>
+
+
+            <!-- =================================
+                 BARRA SUPERIOR
+            ================================== -->
+
+            <header class="status-bar">
+
+                <span id="hora">
+                    09:41
+                </span>
+
+
+                <div class="status-icons">
+
+                    <span class="signal">
+                        ●●●
+                    </span>
+
+                    <span class="wifi">
+                        ◔
+                    </span>
+
+                    <span class="battery">
+                        ▰
+                    </span>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================
+                 HOME
+            ================================== -->
+
+            <section
+                id="homeScreen"
+                class="home-screen active"
+            >
+
+
+                <!-- FECHA -->
+
+                <div class="date-area">
+
+                    <p id="fecha">
+                        Lunes, 13 de octubre
+                    </p>
+
+                </div>
+
+
+                <!-- =================================
+                     WIDGET BARBIE
+                ================================== -->
+
+                <div class="welcome-widget">
+
+
+                    <div class="widget-glow"></div>
+
+
+                    <div class="widget-content">
+
+
+                        <span class="widget-mini-title">
+                            BARBIE PHONE
+                        </span>
+
+
+                        <h1>
+                            Hola, Barbie
+                            <span>✨</span>
+                        </h1>
+
+
+                        <p>
+                            ¿Qué hacemos hoy?
+                        </p>
+
+
+                    </div>
+
+
+                    <div class="widget-star">
+                        ✦
+                    </div>
+
+
+                </div>
+
+
+                <!-- =================================
+                     APLICACIONES
+                ================================== -->
+
+                <div class="apps">
+
+
+                    <!-- WEATHER -->
+
+                    <button
+                        class="app-icon"
+                        id="weatherButton"
+                    >
+
+                        <div class="app-icon-glass">
+
+                            <div class="weather-logo">
+
+                                <span class="rainbow red"></span>
+
+                                <span class="rainbow orange"></span>
+
+                                <span class="rainbow yellow"></span>
+
+                                <span class="rainbow green"></span>
+
+                                <span class="rainbow blue"></span>
+
+                                <span class="rainbow purple"></span>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="app-name">
+                            Weather
+                        </span>
+
+                    </button>
+
+
+
+                    <!-- POKÉDEX -->
+
+                    <button
+                        class="app-icon"
+                        id="pokemonButton"
+                    >
+
+                        <div class="app-icon-glass pokemon-glass">
+
+                            <div class="pokeball">
+
+                                <div class="pokeball-line"></div>
+
+                                <div class="pokeball-center"></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="app-name">
+                            Pokédex
+                        </span>
+
+                    </button>
+
+
+                </div>
+
+<!-- FRASE DEL TELÉFONO -->
+
+<div class="phone-quote">
+
+    <span class="quote-star">✦</span>
+
+    <p>
+        Be you, be free, be fabulous! ✨
+    </p>
+
+    <span class="quote-star">✦</span>
+
+</div>
+                <!-- =================================
+                     DOCK
+                ================================== -->
+
+                <div class="dock">
+
+
+                    <div class="dock-icon">
+                        ♡
+                    </div>
+
+
+                    <div class="dock-icon">
+                        ✉
+                    </div>
+
+
+                    <div class="dock-icon">
+                        ♫
+                    </div>
+
+
+                    <div class="dock-icon">
+                        ⚙
+                    </div>
+
+
+                </div>
+
+
+                <!-- HOME INDICATOR -->
+
+                <div class="home-indicator">
+                    <span></span>
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================
+                 WEATHER SCREEN
+            ================================== -->
+
+         <section id="weatherScreen" class="app-screen weather-screen">
+
+    <button
+        class="back-button"
+        id="weatherBack"
+        aria-label="Volver al inicio">
+        ‹
+    </button>
+
+    <div class="weather-content">
+
+        <div class="weather-card">
+
+            <h1>🌈 Rainbow Weather</h1>
+
+            <div id="saludo"></div>
+
+            <div id="weather">
+
+                <h2 id="ciudad"></h2>
+
+                <div id="iconoTiempo"></div>
+
+                <p id="temperatura"></p>
+
+                <p id="descripcion"></p>
+
+                <p id="humedad"></p>
+
+                <p id="frase"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+            <!-- =================================
+                 POKÉDEX SCREEN
+            ================================== -->
+
+            <section id="pokemonScreen" class="app-screen pokemon-screen">
+
+    <button
+        class="back-button"
+        id="pokemonBack"
+        aria-label="Volver al inicio">
+        ‹
+    </button>
+
+    <div class="pokemon-content">
+
+        <div class="pokemon-card">
+
+            <div class="pokemon-title">
+                <span class="pokeball-mini"></span>
+                <h1>Pokédex</h1>
+            </div>
+
+            <p class="pokemon-subtitle">
+                Pokémon del día ✨
+            </p>
+
+            <div class="pokemon-image-container">
+
+                <div class="pokemon-glow"></div>
+
+                <img
+                    id="pokemonImage"
+                    src=""
+                    alt="Pokémon aleatorio">
+
+            </div>
+
+            <div class="pokemon-info">
+
+                <span id="pokemonNumber">
+                    #000
+                </span>
+
+                <h2 id="pokemonName">
+                    Cargando...
+                </h2>
+
+            </div>
+
+            <button
+                id="randomPokemonButton"
+                class="random-pokemon-button">
+
+                ✦ Otro Pokémon
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
